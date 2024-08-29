@@ -1,0 +1,81 @@
+{
+    "items": [
+        {
+            "nome": "Kau\u00e3",
+            "valor": 8200,
+            "quantidade": 9,
+            "item_especial": false,
+            "ingredientes": [
+                "teste",
+                "jhsadbd",
+                "laksnmd"
+            ],
+            "id": 2,
+            "data_emissao": "2024-08-29T00:20:13.462895",
+            "historico": [
+                {
+                    "acao": "cria\u00e7\u00e3o",
+                    "data_hora": "2024-08-29T00:20:13.462895",
+                    "usuario": "admin"
+                },
+                {
+                    "acao": "exclus\u00e3o",
+                    "data_hora": "2024-08-29T16:04:59.539185"
+                }
+            ],
+            "excluido": true
+        },
+        {
+            "nome": "arthur",
+            "valor": 50.29,
+            "quantidade": 6,
+            "item_especial": false,
+            "ingredientes": [
+                "batata",
+                "cenoura",
+                "beterraba"
+            ],
+            "id": 3,
+            "data_emissao": "2024-08-29T15:30:03.342245",
+            "historico": [
+                {
+                    "acao": "cria\u00e7\u00e3o",
+                    "data_hora": "2024-08-29T15:30:03.342245",
+                    "usuario": "admin"
+                },
+                {
+                    "acao": "edi\u00e7\u00e3o",
+                    "data_hora": "2024-08-29T15:30:08.472265",
+                    "usuario": "admin"
+                },
+                {
+                    "acao": "exclus\u00e3o",
+                    "data_hora": "2024-08-29T15:59:22.065352",
+                    "usuario": "admin"
+                }
+            ],
+            "excluido": true
+        },
+        {
+            "nome": "pedro",
+            "valor": 57.9,
+            "quantidade": 6,
+            "item_especial": true,
+            "ingredientes": [
+                "batata",
+                "cenoura",
+                "beterraba"
+            ],
+            "id": 3,
+            "data_emissao": "2024-08-29T15:59:16.270937",
+            "excluido": false,
+            "historico": [
+                {
+                    "acao": "cria\u00e7\u00e3o",
+                    "data_hora": "2024-08-29T15:59:16.270937",
+                    "usuario": "admin"
+                }
+            ]
+        }
+    ]
+}

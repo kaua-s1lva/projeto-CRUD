@@ -1,0 +1,1 @@
+o sistema falta salvar o registro de quando o usuário exclui um item. ele precisa registrar todas as informações, incluindo a data que foi excluido
