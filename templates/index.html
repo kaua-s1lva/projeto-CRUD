@@ -8,32 +8,45 @@
     <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">CRUD Plataforma</a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light container d-flex justify-content-between">
+        <a class="navbar-brand" href="#">ItemsCenter</a>
+        <span class="navbar-toggler-icon"></span>
     </nav>
 
     <div class="container mt-5">
-        <h1>Gerenciamento de Itens</h1>
-
-        <div class="mb-4">
-            <button class="btn btn-primary" id="addItemBtn">Adicionar Item</button>
+        <div class="bg-white px-4 py-4 shadow-sm mb-5 bg-body rounded">
+            <p class="m-0">A <b>ItemsCenter</b> é uma plataforma onde é possível gerenciar e organizar seus itens de forma eficiente. 
+                Com nossa interface intuitiva, você pode facilmente adicionar, editar e excluir itens, mantendo um 
+                controle preciso sobre os detalhes e características de cada um. Além disso, a plataforma oferece 
+                funcionalidades como a organização de ingredientes, garantindo que suas necessidades sejam atendidas 
+                de forma prática e eficaz.</p>
         </div>
 
-        <table class="table table-striped">
-            <thead>
-                <tr>
-                    <th>Nome</th>
-                    <th>Valor</th>
-                    <th>Quantidade</th>
-                    <th>Item Especial</th>
-                    <th>Data de Emissão</th>
-                    <th>Ações</th>
-                </tr>
-            </thead>
-            <tbody id="itemsTableBody">
-                <!-- Linhas dos itens -->
-            </tbody>
-        </table>
+        <h1 class="my-4">Gerenciamento de Itens</h1>
+
+        <div class="bg-white px-4 py-2 shadow-sm mb-5 bg-body rounded border-top border-primary border-2">
+        
+            <div class="py-4">
+                <button class="btn btn-primary" id="addItemBtn">Adicionar Item</button>
+            </div>
+
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Valor</th>
+                        <th>Quantidade</th>
+                        <th>Item Especial</th>
+                        <th>Data de Criação</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody id="itemsTableBody">
+                    <!-- Linhas dos itens -->
+                </tbody>
+            </table>
+
+        </div>
     </div>
 
     <!-- Modal para Adicionar/Editar Item -->
@@ -49,29 +62,36 @@
                         <div class="mb-3">
                             <label for="nome" class="form-label">Nome</label>
                             <input type="text" class="form-control" id="nome" required>
+                            <div class="invalid-feedback" id="nomeError">O nome é obrigatório.</div>
                         </div>
                         <div class="mb-3">
                             <label for="valor" class="form-label">Valor</label>
                             <input type="number" step="0.01" class="form-control" id="valor" required>
+                            <div class="invalid-feedback" id="valorError">O valor é obrigatório e deve ser um número.</div>
                         </div>
                         <div class="mb-3">
                             <label for="quantidade" class="form-label">Quantidade</label>
                             <input type="number" class="form-control" id="quantidade" required>
+                            <div class="invalid-feedback" id="quantidadeError">A quantidade é obrigatória e deve ser um número.</div>
                         </div>
                         <div class="mb-3">
                             <label for="item_especial" class="form-label">Item Especial</label>
                             <select class="form-control" id="item_especial" required>
+                                <option value="">Selecione</option>
                                 <option value="true">Sim</option>
                                 <option value="false">Não</option>
                             </select>
+                            <div class="invalid-feedback" id="itemEspecialError">Você deve selecionar se o item é especial.</div>
                         </div>
                         <div class="mb-3">
                             <label for="ingredientes" class="form-label">Ingredientes (separados por vírgula)</label>
                             <input type="text" class="form-control" id="ingredientes" required>
+                            <div class="invalid-feedback" id="ingredientesError">Os ingredientes são obrigatórios.</div>
                         </div>
                         <input type="hidden" id="itemId">
                     </form>
                 </div>
+                
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
                     <button type="button" class="btn btn-primary" id="saveItemBtn">Salvar</button>

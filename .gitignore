@@ -1,0 +1,12 @@
+# Arquivos de cache do Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Logs e arquivos temporários
+*.log
+*.tmp
+
+# Arquivo JSON dinâmico
+data.json
