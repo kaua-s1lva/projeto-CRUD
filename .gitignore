@@ -4,6 +4,14 @@ __pycache__/
 *.pyo
 *.pyd
 
+# Ambiente virtual
+venv/
+env/
+
+# Arquivos de configuração de IDEs/editores
+.vscode/
+.idea/
+
 # Logs e arquivos temporários
 *.log
 *.tmp

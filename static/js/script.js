@@ -126,7 +126,6 @@ $(document).ready(function() {
             itemsTableBody.empty();
 
             items.forEach(function(item) {
-                // Exibe apenas itens que não estão marcados como excluídos
                 if (!item.excluido) {
                     var row = `<tr>
                         <td>${item.nome}</td>
