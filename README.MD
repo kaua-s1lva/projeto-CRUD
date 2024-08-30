@@ -9,7 +9,7 @@ cd projeto-CRUD
 ### 2. Crie um Ambiente Virtual (Opcional)
 ```bash
 python -m venv venv
-source venv\Scripts\activate
+source .\venv\Scripts\Activate
 ```
 
 ### 3. Instale as Dependências
