@@ -10,3 +10,7 @@ __pycache__/
 
 # Arquivo JSON dinâmico
 data.json
+
+# Pasta do ambiente virtual
+venv/
+env/
