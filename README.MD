@@ -7,8 +7,10 @@ cd projeto-CRUD
 ```
 
 ### 2. Crie um Ambiente Virtual
+```bash
 python -m venv venv
-source venv/bin/activate  # No Windows use `venv\Scripts\activate`
+source venv\Scripts\activate
+```
 
 ### 3. Instale as Dependências
 pip install -r requirements.txt
