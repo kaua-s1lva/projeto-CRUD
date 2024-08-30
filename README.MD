@@ -13,7 +13,11 @@ source venv\Scripts\activate
 ```
 
 ### 3. Instale as Dependências
+```bash
 pip install -r requirements.txt
+```
 
 ### 4. Execute a Aplicação
+```bash
 python app.py
+```
