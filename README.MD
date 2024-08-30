@@ -3,7 +3,7 @@
 ### 1. Clone o Repositório
 ```bash
 git clone https://github.com/kaua-s1lva/projeto-CRUD.git
-cd seu-projeto
+cd projeto-CRUD
 ```
 
 ### 2. Crie um Ambiente Virtual
