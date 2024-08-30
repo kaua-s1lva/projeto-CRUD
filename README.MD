@@ -6,7 +6,7 @@ git clone https://github.com/kaua-s1lva/projeto-CRUD.git
 cd projeto-CRUD
 ```
 
-### 2. Crie um Ambiente Virtual
+### 2. Crie um Ambiente Virtual (Opcional)
 ```bash
 python -m venv venv
 source venv\Scripts\activate
